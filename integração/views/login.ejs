@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="icon" type="imagem/png" href="https://o.remove.bg/downloads/eceef0be-185b-42f7-9cc5-c5f3c0a1840c/tumblr_62a45bdeedc7b212dd4adfaa7036684a_5fb08824_1280-removebg-preview.png" />
+    <title>Login</title>
+
+    <style>
+        body{
+            background-color:  #dbbd98;
+        }
+    </style>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg" style="background-color: hsl(0, 0%, 96%)">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">PetShop</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="text-center">
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="btn" aria-current="page" href="/api/" role="button" style="background-color: #dbbd98;">Home</a>
+              </li>
+            </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+
+<section>
+    <div class="px-5 py-5 px-md-5 text-center text-lg-start" style="background-color: hsl(0, 0%, 96%)">
+      <br><br>
+      <div class="container">
+        <div class="row gx-lg-5 align-items-center">
+          <div class="col-lg-6 mb-5 mb-lg-0">
+            <h1 class="my-5 display-3 fw-bold ls-tight">
+              O melhor Petshop<br />
+              <span class="text" style="color: #dbbd98;">para o seu Petzinho</span>
+            </h1>
+            <p style="color: eaddcd">
+              Nosso petshop ama animais e oferece um serviço de qualidade para garantir o bem-estar deles. Venha nos visitar e veja a diferença em cuidar de seu pet!
+            </p>
+          </div>
+  
+          <div class="col-lg-6 mb-5 mb-lg-0">
+            <div class="card">
+              <div class="card-body py-5 px-md-5">
+                <h3>Login</h3>
+                <form action="/api/sigin" method="post" class="mt-4">
+                  <!-- Email input -->
+                  <div class="form-outline mb-4">
+                    <label class="form-label" for="email">Email</label>
+                    <input type="text" id="email" class="form-control" name="email"/>
+                  </div>
+  
+                  <!-- Password input -->
+                  <div class="form-outline mb-4">
+                    <label class="form-label" for="senha">Senha</label>
+                    <input type="password" id="senha" class="form-control" name="senha"/>
+                  </div>
+  
+                  <!-- Submit button -->
+                  <input type="submit" value="Entrar" class="btn btn-block mb-4" style="background-color: #dbbd98;">
+                  <a href="/api/signup" class="btn mb-4 ms-4" style="background-color: #dbbd98;">Cadastrar</a>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Jumbotron -->
+  </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>
